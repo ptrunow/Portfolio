@@ -1,0 +1,76 @@
+/* CSS Document */
+/* ~~ Reset ~~ */
+ul, ol, dl {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0; }
+
+a img {
+  border: none; }
+
+/* ~~ REUSABLE ~~ */
+.hide {
+  text-indent: -997;
+  height: 0px; }
+
+.bg {
+  background: #FF0000; }
+
+.bg1 {
+  background: #fefefe; }
+
+.bg2 {
+  background: url(/images/timeline-bg.png) repeat-x center center fixed; }
+
+body {
+  background-image: url(/images/bg-photo.jpg);
+  background-color: #484b6d;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  padding: 10px; }
+
+.content-body {
+  background: #ff0000; }
+
+.header-color .color {
+  height: 8px;
+  width: 20%;
+  float: left; }
+.header-color .color1 {
+  background: #FF0000; }
+.header-color .color2 {
+  background: #484b6d; }
+.header-color .color3 {
+  background: #474c58; }
+
+#intro {
+  /* frame */ }
+  #intro .border {
+    padding: 0 0 0 32px; }
+    #intro .border img {
+      width: 188px;
+      height: 188px;
+      border-radius: 50% 50%;
+      border: 5px solid #FF0000;
+      padding: 5px 5px; }
+
+.header-button {
+  padding: 15px;
+  text-align: right; }
+  .header-button button {
+    background: #484b6d;
+    color: #fafafa; }
+  .header-button button:hover {
+    background: #262946 !important;
+    color: #fafafa; }
+
+.timeline-margin .content-wrap {
+  margin-top: 250px; }
+
+/*# sourceMappingURL=screen.css.map */
