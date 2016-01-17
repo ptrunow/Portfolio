@@ -17,14 +17,29 @@ a img {
   height: 0px; }
 
 .bg {
-  background: #FF0000; }
+  background: #fafafa; }
 
 .bg1 {
   background: #fefefe; }
 
-.bg2 {
-  background: url(/images/timeline-bg.png) repeat-x center center fixed; }
+.container {
+  width: 1200 !important; }
 
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 978px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px; } }
 body {
   background-image: url(/images/bg-photo.jpg);
   background-color: #484b6d;
@@ -33,32 +48,21 @@ body {
   background-position: center top;
   background-size: cover;
   position: relative;
-  padding: 10px; }
+  padding: 45px 0;
+  font-family: 'Roboto';
+  color: #777777; }
 
-.content-body {
-  background: #ff0000; }
-
+/*    ***TOP COLOR***    */
 .header-color .color {
   height: 8px;
   width: 20%;
   float: left; }
 .header-color .color1 {
-  background: #FF0000; }
+  background: #e60000; }
 .header-color .color2 {
   background: #484b6d; }
 .header-color .color3 {
   background: #474c58; }
-
-#intro {
-  /* frame */ }
-  #intro .border {
-    padding: 0 0 0 32px; }
-    #intro .border img {
-      width: 188px;
-      height: 188px;
-      border-radius: 50% 50%;
-      border: 5px solid #FF0000;
-      padding: 5px 5px; }
 
 .header-button {
   padding: 15px;
@@ -70,7 +74,237 @@ body {
     background: #262946 !important;
     color: #fafafa; }
 
-.timeline-margin .content-wrap {
-  margin-top: 250px; }
+/*    ***CONTENT***    */
+/* TIMELINE */
+.timeline-wrap {
+  width: 128px;
+  height: 60px;
+  padding: 0; }
+
+.timeline-bg {
+  background: url(/images/timeline-bg.png) repeat-x center center fixed; }
+
+.timeline-progress {
+  background: url(/images/progress-bar.png) center center;
+  background-size: 400px 500px;
+  height: 82px; }
+
+.timeline-section {
+  background: url(/images/progress-section.png) center center;
+  background-size: 400px 500px;
+  height: 82px; }
+
+.title {
+  height: 82px; }
+
+/* INTRO */
+#intro .intro-content {
+  margin: 100px 0; }
+#intro .intro-h1 {
+  font-weight: 300;
+  font-size: 54px;
+  color: #222222;
+  border-bottom: 1px solid #e60000;
+  padding-bottom: 10px; }
+  #intro .intro-h1 span {
+    color: #e60000;
+    font-weight: bold; }
+#intro .intro-h2 {
+  font-size: 18px;
+  color: #555555;
+  margin: 10px 0 15px; }
+#intro .intro-p {
+  font-size: 16px;
+  color: #333333; }
+
+/* frame */
+.border {
+  padding: 15px 0 0 32px; }
+  .border img {
+    width: 210px;
+    height: 210px;
+    border-radius: 50% 50%;
+    border: 5px solid #e60000;
+    padding: 5px 5px;
+    margin: 0 auto;
+    background: #fafafa; }
+
+/* PROFILE */
+#profile h2 {
+  color: #1E235D;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 60px; }
+#profile h3 {
+  color: #484b6d;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 14px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc; }
+#profile p {
+  color: #333333;
+  font-size: 14px; }
+
+/* timeline point */
+.timeline-point {
+  background: url(/images/progress-point.png) center center;
+  background-size: 400px 500px;
+  height: 82px; }
+
+/* profile margin */
+.header-margin {
+  height: 82px;
+  width: 85px; }
+
+.margin-left-profile {
+  height: 82px;
+  width: 85px; }
+
+.margin-right-profile {
+  height: 82px;
+  width: 101px; }
+
+.margin-right-wrap {
+  padding: 0; }
+
+/* ------------EDUCATION------------ */
+#education h2 {
+  color: #1E235D;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 60px; }
+#education h3 {
+  color: #484b6d;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 14px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc; }
+#education h4 {
+  color: #777777;
+  font-size: 14px;
+  font-weight: bold; }
+#education p {
+  color: #333333;
+  font-size: 14px;
+  font-size: 13px;
+  line-height: 19px; }
+#education .date {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 200; }
+#education .content-edu {
+  padding-bottom: 20px; }
+
+/* timeline */
+.timeline-edu {
+  background: url(/images/progress-education4.png) center center;
+  background-size: 400px 500px;
+  height: 164px; }
+
+.margin-left-edu {
+  height: 164px;
+  width: 85px; }
+
+.margin-right-edu {
+  height: 164px;
+  width: 101px; }
+
+.margin-right-wrap {
+  padding: 0; }
+
+/* ------------WORK------------ */
+#work h2 {
+  color: #1E235D;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 60px; }
+#work h3 {
+  color: #484b6d;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 14px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc; }
+#work h4 {
+  color: #777777;
+  font-size: 14px;
+  font-weight: bold; }
+#work p {
+  color: #333333;
+  font-size: 14px;
+  font-size: 13px;
+  line-height: 19px; }
+#work .date {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 200; }
+#work .content-work {
+  padding-bottom: 20px; }
+
+/* ------------SKILLS------------ */
+.timeline-skills {
+  background: url(/images/progress-work3.png) center center;
+  background-size: 400px 500px;
+  height: 164px; }
+
+#skills h2 {
+  color: #1E235D;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 60px; }
+#skills h3 {
+  color: #484b6d;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 14px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc; }
+
+/* ------------INTERESTS------------ */
+#interests h2 {
+  color: #1E235D;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 60px; }
+#interests h3 {
+  color: #484b6d;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 14px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc; }
+#interests p {
+  color: #333333;
+  font-size: 14px;
+  font-size: 13px;
+  line-height: 19px; }
+
+/* ------------PORTFOLIO------------ */
+#portfolio h2 {
+  color: #1E235D;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 60px; }
+
+/* ------------CONTACT------------ */
+#contact h2 {
+  color: #1E235D;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 60px; }
 
 /*# sourceMappingURL=screen.css.map */

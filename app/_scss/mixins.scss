@@ -1,0 +1,37 @@
+@mixin content-background {
+	background: #e60000;
+}
+
+@mixin content-color {
+	color: #e60000;
+}
+
+@mixin h2 {
+	color: #1E235D;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 60px;
+
+}
+
+@mixin h3 {
+	color: #484b6d;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 14px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+@mixin h4 {
+	color: #777777;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+@mixin p {
+	color: #333333;
+	font-size: 14px;
+}
