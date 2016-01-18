@@ -74,8 +74,8 @@ body {
     background: #262946 !important;
     color: #fafafa; }
 
-/*    ***CONTENT***    */
-/* TIMELINE */
+/*    ***********************************  CONTENT  ***********************************    */
+/* ****** TIMELINE ****** */
 .timeline-wrap {
   width: 128px;
   height: 60px;
@@ -84,20 +84,42 @@ body {
 .timeline-bg {
   background: url(/images/timeline-bg.png) repeat-x center center fixed; }
 
+/*  TITLE HEADER MARGIN  */
+.margin-header-title-left {
+  height: 75px;
+  width: 85px; }
+
 .timeline-progress {
   background: url(/images/progress-bar.png) center center;
   background-size: 400px 500px;
-  height: 82px; }
+  height: 75px; }
 
-.timeline-section {
-  background: url(/images/progress-section.png) center center;
+.title-margin-top {
+  height: 75px;
+  width: 85px; }
+
+.margin-header-title-right {
+  height: 75px;
+  width: 101px; }
+
+/*  TITLE  */
+.timeline-title {
+  background: url(/images/progress-title.png) center center;
   background-size: 400px 500px;
-  height: 82px; }
+  height: 85px; }
 
 .title {
   height: 82px; }
 
-/* INTRO */
+.margin-title-left {
+  height: 82px;
+  width: 85px; }
+
+.margin-title-right {
+  height: 82px;
+  width: 101px; }
+
+/*  INTRO  */
 #intro .intro-content {
   margin: 100px 0; }
 #intro .intro-h1 {
@@ -117,7 +139,6 @@ body {
   font-size: 16px;
   color: #333333; }
 
-/* frame */
 .border {
   padding: 15px 0 0 32px; }
   .border img {
@@ -129,7 +150,14 @@ body {
     margin: 0 auto;
     background: #fafafa; }
 
-/* PROFILE */
+/*  PROFILE  */
+#profile .margin-profile-left {
+  height: 82px;
+  width: 85px; }
+#profile .timeline-profile {
+  background: url(/images/progress-point.png) center center;
+  background-size: 400px 500px;
+  height: 82px; }
 #profile h2 {
   color: #1E235D;
   font-weight: bold;
@@ -147,30 +175,32 @@ body {
 #profile p {
   color: #333333;
   font-size: 14px; }
-
-/* timeline point */
-.timeline-point {
-  background: url(/images/progress-point.png) center center;
-  background-size: 400px 500px;
-  height: 82px; }
-
-/* profile margin */
-.header-margin {
-  height: 82px;
-  width: 85px; }
-
-.margin-left-profile {
-  height: 82px;
-  width: 85px; }
-
-.margin-right-profile {
+#profile .margin-profile-right {
   height: 82px;
   width: 101px; }
-
-.margin-right-wrap {
+#profile .margin-right-wrap {
   padding: 0; }
 
-/* ------------EDUCATION------------ */
+.btn-default {
+  background: #484b6d;
+  border: #484b6d;
+  color: #fafafa; }
+
+.btn-default:hover {
+  background: #26294b !important;
+  color: #fafafa; }
+
+.test {
+  margin-top: 12px !important; }
+
+/*  EDUCATION  */
+#education .margin-edu-left {
+  height: 164px;
+  width: 85px; }
+#education .timeline-edu {
+  background: url(/images/progress-edu.png) center center;
+  background-size: 400px 500px;
+  height: 164px; }
 #education h2 {
   color: #1E235D;
   font-weight: bold;
@@ -200,25 +230,20 @@ body {
   font-weight: 200; }
 #education .content-edu {
   padding-bottom: 20px; }
-
-/* timeline */
-.timeline-edu {
-  background: url(/images/progress-education4.png) center center;
-  background-size: 400px 500px;
-  height: 164px; }
-
-.margin-left-edu {
-  height: 164px;
-  width: 85px; }
-
-.margin-right-edu {
+#education .margin-edu-right {
   height: 164px;
   width: 101px; }
-
-.margin-right-wrap {
+#education .margin-right-wrap {
   padding: 0; }
 
-/* ------------WORK------------ */
+/*  WORK  */
+#work .margin-work-left {
+  height: 164px;
+  width: 85px; }
+#work .timeline-work {
+  background: url(/images/progress-work.png) center center;
+  background-size: 400px 500px;
+  height: 164px; }
 #work h2 {
   color: #1E235D;
   font-weight: bold;
@@ -248,13 +273,20 @@ body {
   font-weight: 200; }
 #work .content-work {
   padding-bottom: 20px; }
+#work .margin-work-right {
+  height: 164px;
+  width: 101px; }
+#work .margin-right-wrap {
+  padding: 0; }
 
-/* ------------SKILLS------------ */
-.timeline-skills {
-  background: url(/images/progress-work3.png) center center;
+/*  SKILLS  */
+#skills .margin-skills-left {
+  height: 164px;
+  width: 85px; }
+#skills .timeline-skills {
+  background: url(/images/progress-point.png) center center;
   background-size: 400px 500px;
   height: 164px; }
-
 #skills h2 {
   color: #1E235D;
   font-weight: bold;
@@ -269,8 +301,22 @@ body {
   margin-top: 14px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ccc; }
+#skills .content-skills {
+  padding-bottom: 20px; }
+#skills .margin-skills-right {
+  height: 164px;
+  width: 101px; }
+#skills .margin-right-wrap {
+  padding: 0; }
 
-/* ------------INTERESTS------------ */
+/*  INTERESTS  */
+#interests .margin-interests-left {
+  height: 102px;
+  width: 85px; }
+#interests .timeline-interests {
+  background: url(/images/progress-point.png) center center;
+  background-size: 400px 500px;
+  height: 102px; }
 #interests h2 {
   color: #1E235D;
   font-weight: bold;
@@ -290,8 +336,15 @@ body {
   font-size: 14px;
   font-size: 13px;
   line-height: 19px; }
+#interests .content-interests {
+  padding-bottom: 2px; }
+#interests .margin-interests-right {
+  height: 102px;
+  width: 101px; }
+#interests .margin-right-wrap {
+  padding: 0; }
 
-/* ------------PORTFOLIO------------ */
+/*  PORTFOLIO  */
 #portfolio h2 {
   color: #1E235D;
   font-weight: bold;
@@ -299,7 +352,7 @@ body {
   font-size: 40px;
   line-height: 60px; }
 
-/* ------------CONTACT------------ */
+/*  CONTACT  */
 #contact h2 {
   color: #1E235D;
   font-weight: bold;
